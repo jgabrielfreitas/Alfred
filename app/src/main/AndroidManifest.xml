@@ -9,7 +9,7 @@
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
-        android:name=".TodoListActivity"
+        android:name=".view.ui.todo.TodoListActivity"
         android:label="@string/title_activity_todo_list_acticvity"
         android:theme="@style/AppTheme">
       <intent-filter>
