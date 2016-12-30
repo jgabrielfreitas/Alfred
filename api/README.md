@@ -1,5 +1,5 @@
-# todo-django
-Django Todo-List application
+# Todo
+Todo API 
 
 ### Run server
 To run the server, please execute the following:
