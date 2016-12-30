@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">ProviderLayer</string>
+  <string name="title_activity_todo_list_acticvity">Todo</string>
 </resources>
