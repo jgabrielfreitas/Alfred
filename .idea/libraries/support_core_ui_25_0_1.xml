@@ -3,11 +3,14 @@
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/provider/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar!/" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/jars/libs/internal_impl-25.0.1.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/cd67243340dc8c8d51ca3482e2c315797d35f5fe/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

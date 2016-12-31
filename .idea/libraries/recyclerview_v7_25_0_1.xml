@@ -2,10 +2,11 @@
   <library name="recyclerview-v7-25.0.1">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/eb520505d87c5af00a58fcf22bd4e483b20431da/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/eb520505d87c5af00a58fcf22bd4e483b20431da/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/eb520505d87c5af00a58fcf22bd4e483b20431da/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

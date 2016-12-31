@@ -8,7 +8,16 @@ import com.google.gson.annotations.SerializedName
 
 class Todo {
 
-  @SerializedName("content")   internal var content : String? = null
-  @SerializedName("create_at") internal var createAt: String? = null
+    constructor(content: String, createAt: String) {
+        this.content  = content
+        this.createAt = createAt
+    }
+
+    @SerializedName("content")   internal var content : String? = null
+    @SerializedName("create_at") internal var createAt: String? = null
+
+    override fun toString(): String {
+        return "$content\n$createAt"
+    }
 
 }
