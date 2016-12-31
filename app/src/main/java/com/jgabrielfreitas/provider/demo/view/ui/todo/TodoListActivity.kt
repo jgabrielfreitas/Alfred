@@ -1,5 +1,6 @@
 package com.jgabrielfreitas.provider.demo.view.ui.todo
 
+import android.R.layout.simple_list_item_1 as default_list
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import com.jgabrielfreitas.layoutid.annotations.InjectLayout
@@ -11,15 +12,14 @@ import kotlinx.android.synthetic.main.activity_todo_list.todoListView
 @InjectLayout(layout = R.layout.activity_todo_list)
 class TodoListActivity : BaseActivity() {
 
-  val presenterImplementation: TodoListPresenter by lazy{
+  val presenterImplementation: TodoListPresenter by lazy {
     TodoListPresenterImpl(this)
   }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    val arrayAdapter: ArrayAdapter<Todo> = ArrayAdapter(this, android.R.layout.simple_list_item_1, presenterImplementation.getTodos())
-
+    val arrayAdapter: ArrayAdapter<Todo> = ArrayAdapter(this, default_list, presenterImplementation.getTodos())
     todoListView.adapter = arrayAdapter
   }
 

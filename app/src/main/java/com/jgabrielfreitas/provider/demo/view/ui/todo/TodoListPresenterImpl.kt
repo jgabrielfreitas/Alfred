@@ -13,7 +13,7 @@ class TodoListPresenterImpl(activity: BaseActivity) : TodoListPresenter {
 
         val listViewContent: MutableList<Todo> = mutableListOf()
         for (i in 0..5)
-            listViewContent.add(Todo("Todo n${listViewContent.count() + 1}", "Create at 31/12/2016"))
+            listViewContent.add(Todo("Todo number....${listViewContent.count() + 1}", "31/12/2016"))
 
         return listViewContent
     }
