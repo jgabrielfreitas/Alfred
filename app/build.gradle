@@ -54,7 +54,7 @@ dependencies {
     compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
 
     // provider layer
-    compile project(':provider')
+    compile project(':alfred')
 }
 
 repositories {
