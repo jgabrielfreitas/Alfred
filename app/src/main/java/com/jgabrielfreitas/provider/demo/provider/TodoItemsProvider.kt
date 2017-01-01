@@ -5,6 +5,7 @@ import com.jgabrielfreitas.alfred.Provider
 import com.jgabrielfreitas.alfred.Receiver
 import com.jgabrielfreitas.provider.demo.model.Todo
 import com.jgabrielfreitas.provider.demo.network.LocalhostApi
+import org.jetbrains.anko.custom.async
 import org.jetbrains.anko.doAsync
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,6 +31,7 @@ class TodoItemsProvider(receiver: Receiver<MutableList<Todo>>) : Provider<Mutabl
         for (i in 0..2)
             fakeList.add(Todo("Todo n${fakeList.count() + 1}", "31/12/2016"))
 
+        // That is not good, but I'll improve this
         doAsync { LocalhostApi.getTodosFromApi(this@TodoItemsProvider) }
         return fakeList
     }

@@ -15,7 +15,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "URL_API", '"10.0.2.2:5000/"')
+        buildConfigField("String", "URL_API", '"http://10.0.2.2:5000/"')
     }
 
     buildTypes {
@@ -44,7 +44,7 @@ dependencies {
 
     // network
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit2:converter-gson:+'
 
     // ui
     compile 'com.github.jgabrielfreitas:Bases:0.0.1'
