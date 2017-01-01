@@ -15,7 +15,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "URL_API", '"http://10.0.2.2:5000"')
+        buildConfigField("String", "URL_API", '"10.0.2.2:5000/"')
     }
 
     buildTypes {
@@ -40,6 +40,7 @@ dependencies {
 
     // kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.anko:anko-sdk15:+"
 
     // network
     compile 'com.squareup.retrofit2:retrofit:2.1.0'

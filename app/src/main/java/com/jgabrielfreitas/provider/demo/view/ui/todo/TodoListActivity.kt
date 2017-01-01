@@ -10,17 +10,24 @@ import com.jgabrielfreitas.provider.demo.view.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_todo_list.todoListView
 
 @InjectLayout(layout = R.layout.activity_todo_list)
-class TodoListActivity : BaseActivity() {
+class TodoListActivity : BaseActivity(), TodoCallback {
 
-  val presenterImplementation: TodoListPresenter by lazy {
-    TodoListPresenterImpl(this)
-  }
+    val presenterImplementation: TodoListPresenter by lazy { TodoListPresenterImpl(this, this) }
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setAdapter(presenterImplementation.getTodos())
+    }
 
-    val arrayAdapter: ArrayAdapter<Todo> = ArrayAdapter(this, default_list, presenterImplementation.getTodos())
-    todoListView.adapter = arrayAdapter
-  }
+    // if has any new todo, update list
+    override fun onUpdate(todoUpdated: MutableList<Todo>) {
+        setAdapter(todoUpdated)
+    }
+
+    // set todos to UI
+    private fun setAdapter(list: MutableList<Todo>) {
+        val arrayAdapter: ArrayAdapter<Todo> = ArrayAdapter(this, default_list, list)
+        todoListView.adapter = arrayAdapter
+    }
 
 }

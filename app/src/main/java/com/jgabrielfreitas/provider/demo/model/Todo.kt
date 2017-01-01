@@ -9,10 +9,15 @@ import com.google.gson.annotations.SerializedName
  */
 
 @Table(name = "Todo")
-class Todo(content: String, createAt: String) : Model() {
+class Todo() { //} : Model() {
 
-    @SerializedName("content")   internal var content : String? = content
-    @SerializedName("create_at") internal var createAt: String? = createAt
+    constructor(content: String, createAt: String) : this() {
+        this.content  = content
+        this.createAt = createAt
+    }
+
+    @SerializedName("content")   internal var content : String? = null
+    @SerializedName("create_at") internal var createAt: String? = null
 
     override fun toString(): String {
         return "$content\n$createAt"
