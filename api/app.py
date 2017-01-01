@@ -13,4 +13,4 @@ def todo():
     return get_file_content('todo-list.json')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

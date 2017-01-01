@@ -1,26 +1,33 @@
 package com.jgabrielfreitas.provider.demo.view.ui.todo
 
+import android.R.layout.simple_list_item_1 as default_list
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import com.jgabrielfreitas.layoutid.annotations.InjectLayout
 import com.jgabrielfreitas.provider.demo.R
+import com.jgabrielfreitas.provider.demo.model.Todo
 import com.jgabrielfreitas.provider.demo.view.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_todo_list.todoListView
 
 @InjectLayout(layout = R.layout.activity_todo_list)
-class TodoListActivity : BaseActivity() {
+class TodoListActivity : BaseActivity(), TodoCallback {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+    val presenterImplementation: TodoListPresenter by lazy { TodoListPresenterImpl(this, this) }
 
-    val listViewContent: MutableList<String> = mutableListOf()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setAdapter(presenterImplementation.getTodos())
+    }
 
-    for (i in 0..5)
-      listViewContent.add("Blah ${listViewContent.count() + 1}")
+    // if has any new todo, update list
+    override fun onUpdate(todoUpdated: MutableList<Todo>) {
+        setAdapter(todoUpdated)
+    }
 
-    val arrayAdapter: ArrayAdapter<String> = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listViewContent)
-
-    todoListView.adapter = arrayAdapter
-  }
+    // set todos to UI
+    private fun setAdapter(list: MutableList<Todo>) {
+        val arrayAdapter: ArrayAdapter<Todo> = ArrayAdapter(this, default_list, list)
+        todoListView.adapter = arrayAdapter
+    }
 
 }
