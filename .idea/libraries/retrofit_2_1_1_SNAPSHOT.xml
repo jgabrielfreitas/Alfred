@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.1-SNAPSHOT/5fb399f7c000dc9088a601555553c62f80a641d7/retrofit-2.1.1-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.1-SNAPSHOT/431dc3f226b68a0a54ed3a6a9d9eb803256e383a/retrofit-2.1.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
