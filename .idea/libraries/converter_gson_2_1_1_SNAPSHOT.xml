@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.1-SNAPSHOT/ebff59cc8bb008d9b0249d0b375d32f7ef89e213/converter-gson-2.1.1-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.1-SNAPSHOT/e70eddc522839984597868399eed5aa85c268e0a/converter-gson-2.1.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
