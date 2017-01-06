@@ -36,6 +36,8 @@ class TodoItemsProvider(receiver: Receiver<MutableList<Todo>>) : Provider<Mutabl
         return fakeList
     }
 
+    override val isNecessaryUpdate = true
+
     override fun diff(older: MutableList<Todo>?, newest: MutableList<Todo>?) {
         // filter only the new items
         // and call receiver.onUpdate

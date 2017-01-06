@@ -8,6 +8,4 @@ interface Receiver<DataType> {
 
   fun onReceiveData(data: DataType)
 
-  fun onUpdate(data: DataType)
-
 }

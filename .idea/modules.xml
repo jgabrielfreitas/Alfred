@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/PrividerLayer.iml" filepath="$PROJECT_DIR$/PrividerLayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProviderLayerTest.iml" filepath="$PROJECT_DIR$/ProviderLayerTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/alfred/alfred.iml" filepath="$PROJECT_DIR$/alfred/alfred.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alfred/alfred.iml" filepath="$PROJECT_DIR$/alfred/alfred.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
