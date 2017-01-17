@@ -7,8 +7,6 @@ import android.app.Activity;
  */
 public class Alfred {
 
-  private Activity target;
-
   private static Alfred alfred = new Alfred();
 
   //public static Alfred getAlfred() {
@@ -16,14 +14,6 @@ public class Alfred {
   //}
 
   private Alfred() {
-  }
-
-  public static void register(Activity target) {
-    this.target = target;
-  }
-
-  public static void unregister(Activity target) {
-    this.target = target;
   }
 
 }
